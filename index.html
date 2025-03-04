@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farah - Software Engineer</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Sticky Header -->
+    <div class="sticky-header">
+        <div class="sticky-header-content">
+            <div class="sticky-name"></div>
+            <div class="sticky-title"></div>
+        </div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="#" class="nav-link">home</a></li>
+                <li><a href="#works" class="nav-link">works</a></li>
+                <li><a href="#contact" class="nav-link">contact</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- Mouse follower -->
+    <div class="cursor-follower"></div>
+
+    <!-- Header Section -->
+    <header class="main-header" id="header-section">
+        <div class="header-content">
+            <div class="header-text">
+                <h1 id="main-name">Farah</h1>
+                <p class="tagline" id="main-title">Software Engineer crafting elegant solutions to complex problems. With a passion for clean code and innovative technologies, I specialize in building scalable web applications and creating seamless user experiences. My expertise spans both frontend and backend development, with a focus on modern JavaScript frameworks and cloud technologies.</p>
+            </div>
+        </div>
+        <div class="header-divider"></div>
+    </header>
+
+    <!-- Toggle Menu -->
+    <div class="toggle-menu">
+        <div class="toggle-header">
+            <div class="logo">F</div>
+            <button class="toggle-close">×</button>
+        </div>
+        <nav class="toggle-nav">
+            <ul>
+                <li><a href="#" class="toggle-link">HOME</a></li>
+                <li><a href="#works" class="toggle-link">WORKS</a></li>
+                <li><a href="#contact" class="toggle-link">CONTACT</a></li>
+            </ul>
+        </nav>
+        <div class="toggle-social">
+            <a href="#" class="social-link">Twitter</a>
+            <a href="#" class="social-link">LinkedIn</a>
+            <a href="#" class="social-link">GitHub</a>
+        </div>
+    </div>
+
+    <!-- Projects Section -->
+    <section id="works" class="section projects-section">
+        <div class="content-wrapper">
+            <h2 class="section-title">My Works</h2>
+            <p class="section-subtitle">A collection of projects I've worked on.</p>
+            <div class="projects-grid">
+                <article class="project-item" data-modal="project1">
+                    <div class="project-preview">
+                        <div class="project-preview-image">
+                            <img src="https://i.imgur.com/ahjHe3h.jpg" alt="Domposer - Website Builder">
+                        </div>
+                        <div class="project-preview-content">
+                            <h3>Domposer</h3>
+                            <p>A website builder with a UI that allows quick HTML and CSS manipulation, with project saving and PWA support.</p>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-item" data-modal="project2">
+                    <div class="project-preview">
+                        <div class="project-preview-image">
+                            <img src="https://cdn.prod.website-files.com/5dcc7f8c449e597be23356e0/657743179cb32a5ca004c5be_code-basics-maintenance-blog-hero-image.webp" alt="Bay.js - Web Components Library">
+                        </div>
+                        <div class="project-preview-content">
+                            <h3>Bay.js</h3>
+                            <p>Lightweight library for web-components with optional build step integration.</p>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-item" data-modal="project3">
+                    <div class="project-preview">
+                        <div class="project-preview-image">
+                            <img src="https://searchengineland.com/figz/wp-content/seloads/2020/03/code-SS_634574354-1920x1080-1.jpg" alt="Cookiemunch - Cookie Consent Plugin">
+                        </div>
+                        <div class="project-preview-content">
+                            <h3>Cookiemunch</h3>
+                            <p>Minimal cookie consent plugin built with vanilla JS and SCSS.</p>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-item" data-modal="project4">
+                    <div class="project-preview">
+                        <div class="project-preview-image">
+                            <img src="https://ecrcommunity.plos.org/wp-content/uploads/sites/9/legacy-featured-images/programming-1009134_1920-16x9.jpg" alt="CloudWatch - Cloud Monitoring Dashboard">
+                        </div>
+                        <div class="project-preview-content">
+                            <h3>CloudWatch</h3>
+                            <p>Real-time cloud infrastructure monitoring dashboard with advanced analytics and alerts.</p>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-item" data-modal="project5">
+                    <div class="project-preview">
+                        <div class="project-preview-image">
+                            <img src="https://www.thecoderschool.com/blog/wp-content/uploads/2019/01/Modern-Computer-programming-Code-942607124_2122x1416.jpeg" alt="EcoTrack - Sustainability Platform">
+                        </div>
+                        <div class="project-preview-content">
+                            <h3>EcoTrack</h3>
+                            <p>Environmental impact tracking platform for businesses to monitor and reduce their carbon footprint.</p>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-item" data-modal="project6">
+                    <div class="project-preview">
+                        <div class="project-preview-image">
+                            <img src="https://blog-media.byjusfutureschool.com/bfs-blog/2022/08/03035002/Article-Image-945%C3%97498.jpg" alt="FinFlow - Finance Management System">
+                        </div>
+                        <div class="project-preview-content">
+                            <h3>FinFlow</h3>
+                            <p>Modern financial management system with real-time transaction tracking and automated reporting.</p>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Modals -->
+    <div class="modal-container">
+        <div class="modal" id="project1">
+            <div class="modal-content">
+                <button class="modal-close">&times;</button>
+                <div class="project-wrap">
+                    <div class="project-image">
+                        <img src="https://i.imgur.com/ahjHe3h.jpg" alt="Domposer - Website Builder">
+                    </div>
+                    <div class="project-text">
+                        <h3>Domposer</h3>
+                        <div class="project-meta">
+                            <span class="project-date">March 2023 - June 2023</span>
+                            <div class="project-tech">
+                                <span class="tech-stack">Laravel</span>
+                                <span class="tech-stack">JavaScript</span>
+                                <span class="tech-stack">HTML/CSS</span>
+                                <span class="tech-stack">PWA</span>
+                            </div>
+                        </div>
+                        <p class="project-paragraph">Domposer is a website builder which has a UI that allows you to quickly add and rearrange HTML and CSS, upload and download created projects and files, login to save up to 5 projects and can be installed as a progressive web application. The stack is Laravel for the backend/API's and vanilla JS for the frontend.</p>
+                        <div class="project-buttons">
+                            <div class="project-button">
+                                <a aria-label="website" href="#" target="_blank">
+                                    <svg style="height:1em; width:1em" viewBox="0 0 1024 1024" transform="scale(1.2)">
+                                        <path fill="currentColor" d="M698.027 597.333C701.44 569.173 704 541.013 704 512c0-29.013-2.56-57.173-5.973-85.333H842.24c6.827 27.306 11.093 55.893 11.093 85.333 0 29.44-4.266 58.027-11.093 85.333M622.507 834.56c25.6-47.36 45.226-98.56 58.88-151.893h125.866c-40.96 70.4-106.24 125.013-184.746 151.893M611.84 597.333H412.16c-4.267-28.16-6.827-56.32-6.827-85.333 0-29.013 2.56-57.6 6.827-85.333h199.68c3.84 27.733 6.827 56.32 6.827 85.333 0 29.013-2.987 57.173-6.827 85.333M512 851.627c-35.413-51.2-64-107.947-81.493-168.96h162.986C576 743.68 547.413 800.427 512 851.627M341.333 341.333H216.747c40.533-70.826 106.24-125.44 184.32-151.893-25.6 47.36-44.8 98.56-59.734 151.893M216.747 682.667h124.586C356.267 736 375.467 787.2 401.067 834.56c-78.08-26.88-143.787-81.493-184.32-151.893m-34.987-85.334c-6.827-27.306-11.093-55.893-11.093-85.333 0-29.44 4.266-58.027 11.093-85.333h144.213C322.56 454.827 320 482.987 320 512c0 29.013 2.56 57.173 5.973 85.333M512 171.947c35.413 51.2 64 108.373 81.493 169.386H430.507C448 280.32 476.587 223.147 512 171.947m295.253 169.386H681.387C667.733 288 648.107 236.8 622.507 189.44c78.506 26.88 143.786 81.067 184.746 151.893M512 85.333c-235.947 0-426.667 192-426.667 426.667 0 235.52 191.147 426.667 426.667 426.667 235.52 0 426.667-191.147 426.667-426.667C938.667 276.48 747.52 85.333 512 85.333z"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal" id="project2">
+            <div class="modal-content">
+                <button class="modal-close">&times;</button>
+                <div class="project-wrap">
+                    <div class="project-image">
+                        <img src="https://cdn.prod.website-files.com/5dcc7f8c449e597be23356e0/657743179cb32a5ca004c5be_code-basics-maintenance-blog-hero-image.webp" alt="Bay.js - Web Components Library">
+                    </div>
+                    <div class="project-text">
+                        <h3>Bay.js</h3>
+                        <div class="project-meta">
+                            <span class="project-date">January 2023 - April 2023</span>
+                            <div class="project-tech">
+                                <span class="tech-stack">JavaScript</span>
+                                <span class="tech-stack">Web Components</span>
+                                <span class="tech-stack">NPM</span>
+                            </div>
+                        </div>
+                        <p class="project-paragraph">An easy to use, lightweight library for web-components. It doesn't need a build step but can be included in a build step if you want to. It's a great way to create reusable components for your projects. It's available as a NPM package and doesn't use any dependencies and is 11kb minified.</p>
+                        <div class="project-buttons">
+                            <div class="project-button">
+                                <a aria-label="website" href="#" target="_blank">
+                                    <svg style="height:1em; width:1em" viewBox="0 0 1024 1024" transform="scale(1.2)">
+                                        <path fill="currentColor" d="M698.027 597.333C701.44 569.173 704 541.013 704 512c0-29.013-2.56-57.173-5.973-85.333H842.24c6.827 27.306 11.093 55.893 11.093 85.333 0 29.44-4.266 58.027-11.093 85.333M622.507 834.56c25.6-47.36 45.226-98.56 58.88-151.893h125.866c-40.96 70.4-106.24 125.013-184.746 151.893M611.84 597.333H412.16c-4.267-28.16-6.827-56.32-6.827-85.333 0-29.013 2.56-57.6 6.827-85.333h199.68c3.84 27.733 6.827 56.32 6.827 85.333 0 29.013-2.987 57.173-6.827 85.333M512 851.627c-35.413-51.2-64-107.947-81.493-168.96h162.986C576 743.68 547.413 800.427 512 851.627M341.333 341.333H216.747c40.533-70.826 106.24-125.44 184.32-151.893-25.6 47.36-44.8 98.56-59.734 151.893M216.747 682.667h124.586C356.267 736 375.467 787.2 401.067 834.56c-78.08-26.88-143.787-81.493-184.32-151.893m-34.987-85.334c-6.827-27.306-11.093-55.893-11.093-85.333 0-29.44 4.266-58.027 11.093-85.333h144.213C322.56 454.827 320 482.987 320 512c0 29.013 2.56 57.173 5.973 85.333M512 171.947c35.413 51.2 64 108.373 81.493 169.386H430.507C448 280.32 476.587 223.147 512 171.947m295.253 169.386H681.387C667.733 288 648.107 236.8 622.507 189.44c78.506 26.88 143.786 81.067 184.746 151.893M512 85.333c-235.947 0-426.667 192-426.667 426.667 0 235.52 191.147 426.667 426.667 426.667 235.52 0 426.667-191.147 426.667-426.667C938.667 276.48 747.52 85.333 512 85.333z"/>
+                                    </svg>
+                                </a>
+                            </div>
+                            <div class="project-button">
+                                <a aria-label="github" href="#" target="_blank">
+                                    <svg viewBox="0 0 120.78 117.79" style="height: 1em; width: 1em; transform: scale(1.05);">
+                                        <g id="Layer_2" data-name="Layer 2">
+                                            <g id="Layer_1-2" data-name="Layer 1">
+                                                <path class="cls-1" fill="currentColor" d="M60.39 0A60.39 60.39 0 0 0 41.3 117.69c3 .56 4.12-1.31 4.12-2.91 0-1.44-.05-6.19-.08-11.24C28.54 107.19 25 96.42 25 96.42c-2.75-7-6.71-8.84-6.71-8.84-5.48-3.75.41-3.67.41-3.67 6.07.43 9.26 6.22 9.26 6.22 5.39 9.23 14.13 6.57 17.57 5 .55-3.9 2.11-6.56 3.84-8.07C36 85.55 21.85 80.37 21.85 57.23A23.35 23.35 0 0 1 28.08 41c-.63-1.52-2.7-7.66.58-16 0 0 5.07-1.62 16.61 6.19a57.36 57.36 0 0 1 30.25 0C87 23.42 92.11 25 92.11 25c3.28 8.32 1.22 14.46.59 16a23.34 23.34 0 0 1 6.21 16.21c0 23.2-14.12 28.3-27.57 29.8 2.16 1.87 4.09 5.55 4.09 11.18 0 8.08-.06 14.59-.06 16.57 0 1.61 1.08 3.49 4.14 2.9A60.39 60.39 0 0 0 60.39 0Z"/>
+                                            </g>
+                                        </g>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal" id="project3">
+            <div class="modal-content">
+                <button class="modal-close">&times;</button>
+                <div class="project-wrap">
+                    <div class="project-image">
+                        <img src="https://searchengineland.com/figz/wp-content/seloads/2020/03/code-SS_634574354-1920x1080-1.jpg" alt="Cookiemunch - Cookie Consent Plugin">
+                    </div>
+                    <div class="project-text">
+                        <h3>Cookiemunch</h3>
+                        <div class="project-meta">
+                            <span class="project-date">September 2023 - November 2023</span>
+                            <div class="project-tech">
+                                <span class="tech-stack">JavaScript</span>
+                                <span class="tech-stack">SCSS</span>
+                                <span class="tech-stack">Parcel</span>
+                                <span class="tech-stack">NPM</span>
+                            </div>
+                        </div>
+                        <p class="project-paragraph">A simple, customizable, minimal setup cookie plugin that allows your users to select which cookies to accept or decline. This was created with vanilla JS, SCSS and Parcel Bundler and is available as a NPM package and the git repository makes any type of customization to code and themes possible.</p>
+                        <div class="project-buttons">
+                            <div class="project-button">
+                                <a aria-label="website" href="#" target="_blank">
+                                    <svg style="height:1em; width:1em" viewBox="0 0 1024 1024" transform="scale(1.2)">
+                                        <path fill="currentColor" d="M698.027 597.333C701.44 569.173 704 541.013 704 512c0-29.013-2.56-57.173-5.973-85.333H842.24c6.827 27.306 11.093 55.893 11.093 85.333 0 29.44-4.266 58.027-11.093 85.333M622.507 834.56c25.6-47.36 45.226-98.56 58.88-151.893h125.866c-40.96 70.4-106.24 125.013-184.746 151.893M611.84 597.333H412.16c-4.267-28.16-6.827-56.32-6.827-85.333 0-29.013 2.56-57.6 6.827-85.333h199.68c3.84 27.733 6.827 56.32 6.827 85.333 0 29.013-2.987 57.173-6.827 85.333M512 851.627c-35.413-51.2-64-107.947-81.493-168.96h162.986C576 743.68 547.413 800.427 512 851.627M341.333 341.333H216.747c40.533-70.826 106.24-125.44 184.32-151.893-25.6 47.36-44.8 98.56-59.734 151.893M216.747 682.667h124.586C356.267 736 375.467 787.2 401.067 834.56c-78.08-26.88-143.787-81.493-184.32-151.893m-34.987-85.334c-6.827-27.306-11.093-55.893-11.093-85.333 0-29.44 4.266-58.027 11.093-85.333h144.213C322.56 454.827 320 482.987 320 512c0 29.013 2.56 57.173 5.973 85.333M512 171.947c35.413 51.2 64 108.373 81.493 169.386H430.507C448 280.32 476.587 223.147 512 171.947m295.253 169.386H681.387C667.733 288 648.107 236.8 622.507 189.44c78.506 26.88 143.786 81.067 184.746 151.893M512 85.333c-235.947 0-426.667 192-426.667 426.667 0 235.52 191.147 426.667 426.667 426.667 235.52 0 426.667-191.147 426.667-426.667C938.667 276.48 747.52 85.333 512 85.333z"/>
+                                    </svg>
+                                </a>
+                            </div>
+                            <div class="project-button">
+                                <a aria-label="github" href="#" target="_blank">
+                                    <svg viewBox="0 0 120.78 117.79" style="height: 1em; width: 1em; transform: scale(1.05);">
+                                        <g id="Layer_2" data-name="Layer 2">
+                                            <g id="Layer_1-2" data-name="Layer 1">
+                                                <path class="cls-1" fill="currentColor" d="M60.39 0A60.39 60.39 0 0 0 41.3 117.69c3 .56 4.12-1.31 4.12-2.91 0-1.44-.05-6.19-.08-11.24C28.54 107.19 25 96.42 25 96.42c-2.75-7-6.71-8.84-6.71-8.84-5.48-3.75.41-3.67.41-3.67 6.07.43 9.26 6.22 9.26 6.22 5.39 9.23 14.13 6.57 17.57 5 .55-3.9 2.11-6.56 3.84-8.07C36 85.55 21.85 80.37 21.85 57.23A23.35 23.35 0 0 1 28.08 41c-.63-1.52-2.7-7.66.58-16 0 0 5.07-1.62 16.61 6.19a57.36 57.36 0 0 1 30.25 0C87 23.42 92.11 25 92.11 25c3.28 8.32 1.22 14.46.59 16a23.34 23.34 0 0 1 6.21 16.21c0 23.2-14.12 28.3-27.57 29.8 2.16 1.87 4.09 5.55 4.09 11.18 0 8.08-.06 14.59-.06 16.57 0 1.61 1.08 3.49 4.14 2.9A60.39 60.39 0 0 0 60.39 0Z"/>
+                                            </g>
+                                        </g>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal" id="project4">
+            <div class="modal-content">
+                <button class="modal-close">&times;</button>
+                <div class="project-wrap">
+                    <div class="project-image">
+                        <img src="https://ecrcommunity.plos.org/wp-content/uploads/sites/9/legacy-featured-images/programming-1009134_1920-16x9.jpg" alt="CloudWatch - Cloud Monitoring Dashboard">
+                    </div>
+                    <div class="project-text">
+                        <h3>CloudWatch</h3>
+                        <div class="project-meta">
+                            <span class="project-date">May 2023 - August 2023</span>
+                            <div class="project-tech">
+                                <span class="tech-stack">React</span>
+                                <span class="tech-stack">Node.js</span>
+                                <span class="tech-stack">AWS</span>
+                                <span class="tech-stack">GraphQL</span>
+                                <span class="tech-stack">D3.js</span>
+                            </div>
+                        </div>
+                        <p class="project-paragraph">A comprehensive cloud monitoring solution that provides real-time insights into infrastructure performance. Features include customizable dashboards, automated alerting, and detailed analytics. Built with React for the frontend, Node.js backend, and integrates with AWS services. Uses D3.js for advanced data visualization and GraphQL for efficient data fetching.</p>
+                        <div class="project-buttons">
+                            <div class="project-button">
+                                <a aria-label="website" href="#" target="_blank">
+                                    <svg style="height:1em; width:1em" viewBox="0 0 1024 1024" transform="scale(1.2)">
+                                        <path fill="currentColor" d="M698.027 597.333C701.44 569.173 704 541.013 704 512c0-29.013-2.56-57.173-5.973-85.333H842.24c6.827 27.306 11.093 55.893 11.093 85.333 0 29.44-4.266 58.027-11.093 85.333M622.507 834.56c25.6-47.36 45.226-98.56 58.88-151.893h125.866c-40.96 70.4-106.24 125.013-184.746 151.893M611.84 597.333H412.16c-4.267-28.16-6.827-56.32-6.827-85.333 0-29.013 2.56-57.6 6.827-85.333h199.68c3.84 27.733 6.827 56.32 6.827 85.333 0 29.013-2.987 57.173-6.827 85.333M512 851.627c-35.413-51.2-64-107.947-81.493-168.96h162.986C576 743.68 547.413 800.427 512 851.627M341.333 341.333H216.747c40.533-70.826 106.24-125.44 184.32-151.893-25.6 47.36-44.8 98.56-59.734 151.893M216.747 682.667h124.586C356.267 736 375.467 787.2 401.067 834.56c-78.08-26.88-143.787-81.493-184.32-151.893m-34.987-85.334c-6.827-27.306-11.093-55.893-11.093-85.333 0-29.44 4.266-58.027 11.093-85.333h144.213C322.56 454.827 320 482.987 320 512c0 29.013 2.56 57.173 5.973 85.333M512 171.947c35.413 51.2 64 108.373 81.493 169.386H430.507C448 280.32 476.587 223.147 512 171.947m295.253 169.386H681.387C667.733 288 648.107 236.8 622.507 189.44c78.506 26.88 143.786 81.067 184.746 151.893M512 85.333c-235.947 0-426.667 192-426.667 426.667 0 235.52 191.147 426.667 426.667 426.667 235.52 0 426.667-191.147 426.667-426.667C938.667 276.48 747.52 85.333 512 85.333z"/>
+                                    </svg>
+                                </a>
+                            </div>
+                            <div class="project-button">
+                                <a aria-label="github" href="#" target="_blank">
+                                    <svg viewBox="0 0 120.78 117.79" style="height: 1em; width: 1em; transform: scale(1.05);">
+                                        <g id="Layer_2" data-name="Layer 2">
+                                            <g id="Layer_1-2" data-name="Layer 1">
+                                                <path class="cls-1" fill="currentColor" d="M60.39 0A60.39 60.39 0 0 0 41.3 117.69c3 .56 4.12-1.31 4.12-2.91 0-1.44-.05-6.19-.08-11.24C28.54 107.19 25 96.42 25 96.42c-2.75-7-6.71-8.84-6.71-8.84-5.48-3.75.41-3.67.41-3.67 6.07.43 9.26 6.22 9.26 6.22 5.39 9.23 14.13 6.57 17.57 5 .55-3.9 2.11-6.56 3.84-8.07C36 85.55 21.85 80.37 21.85 57.23A23.35 23.35 0 0 1 28.08 41c-.63-1.52-2.7-7.66.58-16 0 0 5.07-1.62 16.61 6.19a57.36 57.36 0 0 1 30.25 0C87 23.42 92.11 25 92.11 25c3.28 8.32 1.22 14.46.59 16a23.34 23.34 0 0 1 6.21 16.21c0 23.2-14.12 28.3-27.57 29.8 2.16 1.87 4.09 5.55 4.09 11.18 0 8.08-.06 14.59-.06 16.57 0 1.61 1.08 3.49 4.14 2.9A60.39 60.39 0 0 0 60.39 0Z"/>
+                                            </g>
+                                        </g>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal" id="project5">
+            <div class="modal-content">
+                <button class="modal-close">&times;</button>
+                <div class="project-wrap">
+                    <div class="project-image">
+                        <img src="https://www.thecoderschool.com/blog/wp-content/uploads/2019/01/Modern-Computer-programming-Code-942607124_2122x1416.jpeg" alt="EcoTrack - Sustainability Platform">
+                    </div>
+                    <div class="project-text">
+                        <h3>EcoTrack</h3>
+                        <div class="project-meta">
+                            <span class="project-date">July 2023 - October 2023</span>
+                            <div class="project-tech">
+                                <span class="tech-stack">Vue.js</span>
+                                <span class="tech-stack">Python</span>
+                                <span class="tech-stack">Django</span>
+                                <span class="tech-stack">PostgreSQL</span>
+                                <span class="tech-stack">Docker</span>
+                            </div>
+                        </div>
+                        <p class="project-paragraph">A comprehensive platform helping businesses track and reduce their environmental impact. Features include carbon footprint calculation, sustainability metrics dashboard, and automated reporting. Built with Vue.js frontend, Django backend, and uses machine learning for predictive analytics. Containerized with Docker for easy deployment and scaling.</p>
+                        <div class="project-buttons">
+                            <div class="project-button">
+                                <a aria-label="website" href="#" target="_blank">
+                                    <svg style="height:1em; width:1em" viewBox="0 0 1024 1024" transform="scale(1.2)">
+                                        <path fill="currentColor" d="M698.027 597.333C701.44 569.173 704 541.013 704 512c0-29.013-2.56-57.173-5.973-85.333H842.24c6.827 27.306 11.093 55.893 11.093 85.333 0 29.44-4.266 58.027-11.093 85.333M622.507 834.56c25.6-47.36 45.226-98.56 58.88-151.893h125.866c-40.96 70.4-106.24 125.013-184.746 151.893M611.84 597.333H412.16c-4.267-28.16-6.827-56.32-6.827-85.333 0-29.013 2.56-57.6 6.827-85.333h199.68c3.84 27.733 6.827 56.32 6.827 85.333 0 29.013-2.987 57.173-6.827 85.333M512 851.627c-35.413-51.2-64-107.947-81.493-168.96h162.986C576 743.68 547.413 800.427 512 851.627M341.333 341.333H216.747c40.533-70.826 106.24-125.44 184.32-151.893-25.6 47.36-44.8 98.56-59.734 151.893M216.747 682.667h124.586C356.267 736 375.467 787.2 401.067 834.56c-78.08-26.88-143.787-81.493-184.32-151.893m-34.987-85.334c-6.827-27.306-11.093-55.893-11.093-85.333 0-29.44 4.266-58.027 11.093-85.333h144.213C322.56 454.827 320 482.987 320 512c0 29.013 2.56 57.173 5.973 85.333M512 171.947c35.413 51.2 64 108.373 81.493 169.386H430.507C448 280.32 476.587 223.147 512 171.947m295.253 169.386H681.387C667.733 288 648.107 236.8 622.507 189.44c78.506 26.88 143.786 81.067 184.746 151.893M512 85.333c-235.947 0-426.667 192-426.667 426.667 0 235.52 191.147 426.667 426.667 426.667 235.52 0 426.667-191.147 426.667-426.667C938.667 276.48 747.52 85.333 512 85.333z"/>
+                                    </svg>
+                                </a>
+                            </div>
+                            <div class="project-button">
+                                <a aria-label="github" href="#" target="_blank">
+                                    <svg viewBox="0 0 120.78 117.79" style="height: 1em; width: 1em; transform: scale(1.05);">
+                                        <g id="Layer_2" data-name="Layer 2">
+                                            <g id="Layer_1-2" data-name="Layer 1">
+                                                <path class="cls-1" fill="currentColor" d="M60.39 0A60.39 60.39 0 0 0 41.3 117.69c3 .56 4.12-1.31 4.12-2.91 0-1.44-.05-6.19-.08-11.24C28.54 107.19 25 96.42 25 96.42c-2.75-7-6.71-8.84-6.71-8.84-5.48-3.75.41-3.67.41-3.67 6.07.43 9.26 6.22 9.26 6.22 5.39 9.23 14.13 6.57 17.57 5 .55-3.9 2.11-6.56 3.84-8.07C36 85.55 21.85 80.37 21.85 57.23A23.35 23.35 0 0 1 28.08 41c-.63-1.52-2.7-7.66.58-16 0 0 5.07-1.62 16.61 6.19a57.36 57.36 0 0 1 30.25 0C87 23.42 92.11 25 92.11 25c3.28 8.32 1.22 14.46.59 16a23.34 23.34 0 0 1 6.21 16.21c0 23.2-14.12 28.3-27.57 29.8 2.16 1.87 4.09 5.55 4.09 11.18 0 8.08-.06 14.59-.06 16.57 0 1.61 1.08 3.49 4.14 2.9A60.39 60.39 0 0 0 60.39 0Z"/>
+                                            </g>
+                                        </g>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal" id="project6">
+            <div class="modal-content">
+                <button class="modal-close">&times;</button>
+                <div class="project-wrap">
+                    <div class="project-image">
+                        <img src="https://blog-media.byjusfutureschool.com/bfs-blog/2022/08/03035002/Article-Image-945%C3%97498.jpg" alt="FinFlow - Finance Management System">
+                    </div>
+                    <div class="project-text">
+                        <h3>FinFlow</h3>
+                        <div class="project-meta">
+                            <span class="project-date">October 2023 - January 2024</span>
+                            <div class="project-tech">
+                                <span class="tech-stack">Next.js</span>
+                                <span class="tech-stack">TypeScript</span>
+                                <span class="tech-stack">Prisma</span>
+                                <span class="tech-stack">MongoDB</span>
+                                <span class="tech-stack">TailwindCSS</span>
+                            </div>
+                        </div>
+                        <p class="project-paragraph">A modern financial management system designed for small to medium-sized businesses. Features include real-time transaction tracking, automated expense categorization, and detailed financial reporting. Built with Next.js and TypeScript for type-safe development, uses Prisma ORM with MongoDB for efficient data management, and styled with TailwindCSS for a clean, responsive interface.</p>
+                        <div class="project-buttons">
+                            <div class="project-button">
+                                <a aria-label="website" href="#" target="_blank">
+                                    <svg style="height:1em; width:1em" viewBox="0 0 1024 1024" transform="scale(1.2)">
+                                        <path fill="currentColor" d="M698.027 597.333C701.44 569.173 704 541.013 704 512c0-29.013-2.56-57.173-5.973-85.333H842.24c6.827 27.306 11.093 55.893 11.093 85.333 0 29.44-4.266 58.027-11.093 85.333M622.507 834.56c25.6-47.36 45.226-98.56 58.88-151.893h125.866c-40.96 70.4-106.24 125.013-184.746 151.893M611.84 597.333H412.16c-4.267-28.16-6.827-56.32-6.827-85.333 0-29.013 2.56-57.6 6.827-85.333h199.68c3.84 27.733 6.827 56.32 6.827 85.333 0 29.013-2.987 57.173-6.827 85.333M512 851.627c-35.413-51.2-64-107.947-81.493-168.96h162.986C576 743.68 547.413 800.427 512 851.627M341.333 341.333H216.747c40.533-70.826 106.24-125.44 184.32-151.893-25.6 47.36-44.8 98.56-59.734 151.893M216.747 682.667h124.586C356.267 736 375.467 787.2 401.067 834.56c-78.08-26.88-143.787-81.493-184.32-151.893m-34.987-85.334c-6.827-27.306-11.093-55.893-11.093-85.333 0-29.44 4.266-58.027 11.093-85.333h144.213C322.56 454.827 320 482.987 320 512c0 29.013 2.56 57.173 5.973 85.333M512 171.947c35.413 51.2 64 108.373 81.493 169.386H430.507C448 280.32 476.587 223.147 512 171.947m295.253 169.386H681.387C667.733 288 648.107 236.8 622.507 189.44c78.506 26.88 143.786 81.067 184.746 151.893M512 85.333c-235.947 0-426.667 192-426.667 426.667 0 235.52 191.147 426.667 426.667 426.667 235.52 0 426.667-191.147 426.667-426.667C938.667 276.48 747.52 85.333 512 85.333z"/>
+                                    </svg>
+                                </a>
+                            </div>
+                            <div class="project-button">
+                                <a aria-label="github" href="#" target="_blank">
+                                    <svg viewBox="0 0 120.78 117.79" style="height: 1em; width: 1em; transform: scale(1.05);">
+                                        <g id="Layer_2" data-name="Layer 2">
+                                            <g id="Layer_1-2" data-name="Layer 1">
+                                                <path class="cls-1" fill="currentColor" d="M60.39 0A60.39 60.39 0 0 0 41.3 117.69c3 .56 4.12-1.31 4.12-2.91 0-1.44-.05-6.19-.08-11.24C28.54 107.19 25 96.42 25 96.42c-2.75-7-6.71-8.84-6.71-8.84-5.48-3.75.41-3.67.41-3.67 6.07.43 9.26 6.22 9.26 6.22 5.39 9.23 14.13 6.57 17.57 5 .55-3.9 2.11-6.56 3.84-8.07C36 85.55 21.85 80.37 21.85 57.23A23.35 23.35 0 0 1 28.08 41c-.63-1.52-2.7-7.66.58-16 0 0 5.07-1.62 16.61 6.19a57.36 57.36 0 0 1 30.25 0C87 23.42 92.11 25 92.11 25c3.28 8.32 1.22 14.46.59 16a23.34 23.34 0 0 1 6.21 16.21c0 23.2-14.12 28.3-27.57 29.8 2.16 1.87 4.09 5.55 4.09 11.18 0 8.08-.06 14.59-.06 16.57 0 1.61 1.08 3.49 4.14 2.9A60.39 60.39 0 0 0 60.39 0Z"/>
+                                            </g>
+                                        </g>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact-section">
+        <div class="content-wrapper">
+            <h2 class="section-title">CONTACT</h2>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <a href="mailto:en.farah@gmail.com" class="contact-email">en.farah@gmail.com</a>
+                </div>
+                <div class="social-links">
+                    <a href="#" class="social-link">Twitter</a>
+                    <a href="#" class="social-link">LinkedIn</a>
+                    <a href="/resume.pdf" class="social-link" target="_blank">Resume</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="js/cursor.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html> 

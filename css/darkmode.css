@@ -1,0 +1,169 @@
+/* Dark Mode Styles */
+body.dark-mode {
+    background-color: var(--primary-dark);
+    color: var(--text-dark);
+}
+
+body.dark-mode .main-nav {
+    background-color: rgba(26, 27, 30, 0.8);
+}
+
+body.dark-mode .nav-link {
+    color: var(--text-dark);
+}
+
+body.dark-mode .nav-link:hover {
+    color: var(--accent-dark);
+}
+
+body.dark-mode .timeline-item {
+    background-color: var(--secondary-dark);
+}
+
+body.dark-mode .card-front {
+    background-color: var(--secondary-dark);
+}
+
+body.dark-mode .card-back {
+    background-color: var(--secondary-dark);
+}
+
+body.dark-mode .form-group input,
+body.dark-mode .form-group textarea {
+    color: var(--text-dark);
+    border-color: var(--secondary-dark);
+}
+
+body.dark-mode .form-group label {
+    color: var(--text-dark);
+}
+
+body.dark-mode .social-icon {
+    color: var(--text-dark);
+}
+
+body.dark-mode .social-icon:hover {
+    color: var(--accent-dark);
+}
+
+body.dark-mode .cta-button,
+body.dark-mode .submit-button {
+    background-color: var(--accent-dark);
+    color: var(--primary-dark);
+}
+
+body.dark-mode .cta-button:hover,
+body.dark-mode .submit-button:hover {
+    background-color: var(--hover-dark);
+}
+
+body.dark-mode .theme-toggle svg {
+    fill: var(--text-dark);
+}
+
+/* Light Mode Styles */
+body {
+    background-color: var(--primary-light);
+    color: var(--text-light);
+}
+
+.main-nav {
+    background-color: rgba(248, 249, 250, 0.8);
+}
+
+.nav-link {
+    color: var(--text-light);
+}
+
+.nav-link:hover {
+    color: var(--accent-light);
+}
+
+.timeline-item {
+    background-color: var(--secondary-light);
+}
+
+.card-front {
+    background-color: var(--secondary-light);
+}
+
+.card-back {
+    background-color: var(--secondary-light);
+}
+
+.form-group input,
+.form-group textarea {
+    color: var(--text-light);
+    border-color: var(--secondary-light);
+}
+
+.form-group label {
+    color: var(--text-light);
+}
+
+.social-icon {
+    color: var(--text-light);
+}
+
+.social-icon:hover {
+    color: var(--accent-light);
+}
+
+.cta-button,
+.submit-button {
+    background-color: var(--accent-light);
+    color: var(--primary-light);
+}
+
+.cta-button:hover,
+.submit-button:hover {
+    background-color: var(--hover-light);
+}
+
+.theme-toggle svg {
+    fill: var(--text-light);
+}
+
+/* Theme Toggle Icon Display */
+body.dark-mode .sun-icon {
+    display: block;
+}
+
+body.dark-mode .moon-icon {
+    display: none;
+}
+
+.sun-icon {
+    display: none;
+}
+
+.moon-icon {
+    display: block;
+}
+
+/* Skill Bar Colors */
+body.dark-mode .skill-level {
+    background-color: var(--accent-dark);
+}
+
+.skill-level {
+    background-color: var(--accent-light);
+}
+
+/* Smooth Transition for All Theme Changes */
+body,
+.main-nav,
+.nav-link,
+.timeline-item,
+.card-front,
+.card-back,
+.form-group input,
+.form-group textarea,
+.form-group label,
+.social-icon,
+.cta-button,
+.submit-button,
+.theme-toggle svg,
+.skill-level {
+    transition: all var(--transition-speed) ease;
+} 

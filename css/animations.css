@@ -1,0 +1,253 @@
+/* Cursor Follower */
+.cursor-follower {
+    width: 20px;
+    height: 20px;
+    background: var(--accent-dark);
+    border-radius: 50%;
+    position: fixed;
+    pointer-events: none;
+    mix-blend-mode: difference;
+    z-index: 9999;
+    opacity: 0.5;
+    transition: transform 0.1s ease;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.cursor-follower.active {
+    transform: translate(-50%, -50%) scale(1.5);
+}
+
+/* Text Animations */
+.animated-text {
+    opacity: 0;
+    animation: slideIn 1s ease forwards;
+}
+
+.animated-text-delay {
+    opacity: 0;
+    animation: slideIn 1s ease forwards;
+    animation-delay: 0.3s;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Scroll Animations */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Project Card Animations */
+.project-card:hover .card-inner {
+    transform: rotateY(180deg);
+}
+
+.project-card:hover .card-front img {
+    transform: scale(1.1);
+}
+
+/* Skill Bar Animation */
+.skill-level {
+    width: 0;
+    animation: fillSkill 1.5s ease-out forwards;
+}
+
+@keyframes fillSkill {
+    from {
+        width: 0;
+    }
+    to {
+        width: var(--skill-percentage);
+    }
+}
+
+/* Button Animations */
+.cta-button, .submit-button {
+    position: relative;
+    overflow: hidden;
+}
+
+.cta-button::after, .submit-button::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    transition: width 0.6s ease-out, height 0.6s ease-out;
+}
+
+.cta-button:active::after, .submit-button:active::after {
+    width: 300px;
+    height: 300px;
+}
+
+/* Social Icon Animations */
+.social-icon svg {
+    transition: transform 0.3s ease;
+}
+
+.social-icon:hover svg {
+    animation: bounce 0.5s ease infinite;
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-5px);
+    }
+}
+
+/* Form Animations */
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: var(--accent-dark);
+    box-shadow: 0 0 0 2px rgba(116, 192, 252, 0.2);
+}
+
+/* Theme Toggle Animations */
+.theme-toggle svg {
+    transition: transform 0.3s ease;
+}
+
+.theme-toggle:hover svg {
+    animation: rotate 1s ease infinite;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* Navigation Link Animations */
+.nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: var(--accent-dark);
+    transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+/* Parallax Scroll Effect */
+.parallax {
+    transform: translateY(var(--parallax-offset));
+    transition: transform 0.1s ease-out;
+}
+
+/* Loading Animation */
+@keyframes loading {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.loading {
+    width: 30px;
+    height: 30px;
+    border: 3px solid var(--secondary-dark);
+    border-top-color: var(--accent-dark);
+    border-radius: 50%;
+    animation: loading 1s infinite linear;
+}
+
+/* Page Transition */
+.page-transition {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--primary-dark);
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: transform 0.6s ease;
+    z-index: 9999;
+}
+
+.page-transition.active {
+    transform: scaleY(1);
+}
+
+/* Hover Lift Effect */
+.hover-lift {
+    transition: transform 0.3s ease;
+}
+
+.hover-lift:hover {
+    transform: translateY(-5px);
+}
+
+/* Typing Animation */
+.typing::after {
+    content: '|';
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+}
+
+/* Scale Animation */
+.scale {
+    transition: transform 0.3s ease;
+}
+
+.scale:hover {
+    transform: scale(1.05);
+}
+
+/* Shake Animation */
+@keyframes shake {
+    0%, 100% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(-5px);
+    }
+    75% {
+        transform: translateX(5px);
+    }
+}
+
+.shake:hover {
+    animation: shake 0.3s ease;
+} 
